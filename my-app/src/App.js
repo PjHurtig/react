@@ -3,14 +3,14 @@ import './App.css';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
 import StatefulGreeting from './components/StatefulGreeting';
-import ConditionalRenderingClass from './components/ConditionalRenderingClass';
-import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import MethodsAsPropsParent from './components/MethodsAsPropsParent';
+import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRenderingFunctional connected={true} />
-      <ConditionalRenderingClass />
+      <MethodsAsPropsParent />
+      {/* <MethodsAsPropsChild /> */}
     </div>
   );
 } 
