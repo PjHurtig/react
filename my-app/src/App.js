@@ -3,12 +3,14 @@ import './App.css';
 import FunctionalGreeting from './components/FunctionalGreeting';
 import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
 import StatefulGreeting from './components/StatefulGreeting';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreeting greeting="stateful greeting" age="36" />
-      <FunctionalGreetingWithProps greeting="nice to meet ya" name="PJ" age="35" />
+      <ConditionalRenderingFunctional connected={true} />
+      <ConditionalRenderingClass />
     </div>
   );
 } 
